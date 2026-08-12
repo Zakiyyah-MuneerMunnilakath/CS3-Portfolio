@@ -67,6 +67,6 @@ START
         Give change
     ENDIF
     Show "Thank you"
-END
+ END
 
 
