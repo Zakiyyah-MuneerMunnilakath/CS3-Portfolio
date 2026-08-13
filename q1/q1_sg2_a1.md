@@ -1,5 +1,6 @@
 # Activity 1: Computational Thinking Exercise - Smart Vending Machine
 Group members: Angela Martinez, Zakiyyah Muneer Munnilakath, Aurasia Olaso
+
 Section: 9-Arayat
 
 ## Main Problem
@@ -13,19 +14,30 @@ Making a vending machine that works properly without breaking down. It needs to 
 
 ## Part 1: Decomposing the Problem
 Sub-Problem 1: Students choosing the right snack
+
 CT Skill: Algorithm design
+
 Solution: The machine should show the items and their prices. Then the buyer would pick the item they want
 
+
 Sub-Problem 2: Checking if the snack is available
+
 CT Skill: Pattern Recognition
+
 Solution: The machine checks if the chosen snack is available. If it is available, it tells the buyer to pick the snack they want.
 
+
 Sub-Problem 3: Checking the amount of change given by the machine
+
 CT Skill: Algorithmic design
+
 Solution: create a system which calculates the amount of change that should be given to a person then gives the correct change to the student
 
+
 Sub-Problem 4: Machine being able to handle multiple students using it in succession
+
 CT Skill: Algorithmic design
+
 Solution: create a system which allows the machine to reset after each purchase so it can serve multiple students one after another
 
 ## Part 2: Algorithmic Solution
