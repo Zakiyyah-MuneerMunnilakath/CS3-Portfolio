@@ -31,7 +31,7 @@ PseudoCode 1 is faster because it only checks the list one time. PseudoCode 2 ha
 
 PseudoCode 1 is easier to understand at first glance because it uses meaningful variable names and has simple logic. It also has fewer lines of code, making it clearer and easier to follow.
    
---YES
+---
 
 **Checklist:**
 * **PseudoCode 1:**
@@ -51,7 +51,7 @@ PseudoCode 1 is easier to understand at first glance because it uses meaningful 
 
 PseudoCode 1 would be easier to update because its structure is straightforward. If we wanted to pass a new feature, such as finding both the maximum and minimum numbers, it would be easier to make changes without causing errors.
    
---YES
+---
 
 **Checklist:**
 * **PseudoCode 1:**
@@ -71,7 +71,7 @@ PseudoCode 1 would be easier to update because its structure is straightforward.
    
 PseudoCode 1 is easier to test with different inputs because it has simpler logic and fewer conditions to check. It is easy to test with small or large lists, and the output is predictable and clear.
 
---YES
+---
 
 **Checklist:**
 * **PseudoCode 1:**
@@ -90,7 +90,7 @@ PseudoCode 1 is easier to test with different inputs because it has simpler logi
 **Imagine the input list comes from a user. What should the algorithm check to avoid errors or misuse?**
 The algorithm should check if the list is empty and make sure that all inputs are valid numbers. It should also handle unusual or individual inputs properly to prevent errors or crashes.
    
---- YES
+--- 
 
 **Checklist:**
 * **PseudoCode 1:**
