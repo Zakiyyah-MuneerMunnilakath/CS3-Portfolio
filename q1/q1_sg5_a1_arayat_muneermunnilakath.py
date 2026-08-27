@@ -4,7 +4,11 @@ class Hero:
         self.hp = hp
     def take_damage(self, damage):
         self.hp = self.hp - damage
-        print(f"{name} has {s} hp left.")
 
 arthur = Hero("Arthur")
-morgana = Hero("Morgana") 
+morgana = Hero("Morgana")
+
+arthur.take_damage(10)
+
+print(f"Arthur hp: {arthur.hp}")
+print(f"Morgana hp: {morgana.hp}")
