@@ -1,0 +1,23 @@
+class Tusoktusok:
+    name = ""
+    sauce = None
+    def __init__(self, name, sauce):
+        self.name = name
+        self.sauce = sauce
+        print(self.name, "is dipped in", self.sauce.name)
+    def eat(self):
+        print("I ate",self.name,"with",self.sauce.name,"and it tastes",self.sauce.taste)
+    def __del__(self):
+        print("I threw it in the garbage can.")
+
+class Sauce:
+    name = ""
+    taste = ""
+    def __init__(self,name,taste):
+        self.name = name
+        self.taste = taste
+        
+vinegar = Sauce("vinegar","sour")
+fishball = Tusoktusok("fishball", vinegar)
+fishball.eat()
+del fishball
