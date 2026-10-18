@@ -2,87 +2,87 @@ class Publication:
     def __init__(self,title,author):
         self.__title = title
         self.__author = author
-    
-    @property    
-    def title (self):
+        
+    def get_title(self):
         return self.__title
-    
-    @title.setter
-    def title (self, value):
-        self.__title = value
         
-    @property
-    def author(self):
+    def get_author(self):
         return self.__author
-    
-    @author.setter
-    def author(self, value):
-        self.__author = value
         
+    def set_title(self,title):
+        self.__title = title
+
+    def set_author(self,author):
+        self.__author = author
+
     def display_info(self):
         print(f"Title: {self.__title}")
         print(f"Author: {self.__author}")
-        
+
 class Book(Publication):
-    def __init__(self, title, author, number_of_pages):
-        super().__init__(title, author)
-        self.number_of_pages = number_of_pages
-            
-    @property
-    def number_of_pages(self):
+    def __init__(self,title,author,number_of_pages):
+        super().__init__(title,author)
+        self.__number_of_pages = number_of_pages
+        
+    def get_number_of_pages(self):
         return self.__number_of_pages
         
-    @number_of_pages.setter
-    def number_of_pages(self, value):
-        if value <= 0:
-            print("The number of pages must be positive.")
-            self.__number_of_pages = 0
+    def set_number_of_pages(self,number_of_pages):
+        if number_of_pages > 0:
+            self.__number_of_pages = number_of_pages
         else:
-            self.__number_of_pages = value
-            
+            print("The number of pages must be positive.")
+    
     def display_info(self):
         super().display_info()
-        print(f"Number of pages: {self.number_of_pages}")
-        
+        print("Number of pages:")
+            
 class Magazine(Publication):
-    def __init__(self, title, author, issue_number):
-        super().__init__(title, author)
-        self.issue_number = issue_number
+    def __init__(self,title,author,issue_number):
+        super().__init__(title,author)
+        self.__issue_number = issue_number
         
-    @property 
-    def issue_number (self):
+    def get_issue_number(self):
         return self.__issue_number
         
-    @issue_number.setter
-    def issue_number(self, value):
-        if value <= 0:
-            print("The issue number must be positive.")
-            self.__issue_number = 0
+    def set_issue_number(self,issue_number):
+        if issue_number > 0:
+            self.__issue_number = issue_number
         else:
-            self.__issue_number = value
+            print("The issue number must be positive.")
             
     def display_info(self):
         super().display_info()
-        print(f"Issue Number: {self.issue_number}")
+        print("Issue number:")
         
-pub1 = Publication("Bahaghari", "Kayla Villanueva")
+pub1 = Publication("Bahaghari", "Luisa Entac")
 book1 = Book("Percy Jackson & The Olympians", "Rick Riordan", 67)
-mag1 = Magazine("Vogue", "Luisa Entac", 505)
+mag1 = Magazine("Vogue", "Kayla Villanueva", 505)
 pub2 = Publication("The Central Scholar", "Jamila Acosta")
 book2 = Book("Harry Potter and the Philosopher's Stone", "JK Rowling", 61)
-mag2 = Magazine("The Economist", "Numerous authors", 777)
+mag2 = Magazine("The Economist", "Francesca Raymundo", 49)
 
-print("---PUBLICATIONS---")
+print("---Publication Information---")
 pub1.display_info()
-print()
+
+print("\n---Book Information---")
+book1.set_number_of_pages(-310)
+book1.display_info()
+print(book1.get_number_of_pages())
+
+print("\n---Magazine Information---")
+mag1.display_info()
+print(mag1.get_issue_number())
+
+print("\n---Publication Information---")
 pub2.display_info()
 
-print("\n---BOOKS---")
-book1.display_info()
-print()
+print("\n---Book Information---")
+book2.set_number_of_pages(-310)
 book2.display_info()
+print(book2.get_number_of_pages())
 
-print("\n---MAGAZINES---")
-mag1.display_info()
-print()
+print("\n---Magazine Information---")
 mag2.display_info()
+print(mag2.get_issue_number())
+
